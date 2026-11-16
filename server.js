@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Your insecure HTTP stream URL
-const TARGET_STREAM_URL = 'http://your-insecure-stream-server.com/stream';
+const TARGET_STREAM_URL = 'http://cf.futuremyprovt.com:80/play/live.php?mac=00:1B:79:F8:91:52&stream=1992063&extension=ts&play_token=QcJ8LgFNB1';
 
 app.get('/proxy-stream', (req, res) => {
     const client = TARGET_STREAM_URL.startsWith('https') ? https : http;
